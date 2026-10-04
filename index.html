@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hola guapa 💗</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="hearts"></div>
+
+<main>
+<section id="question" class="screen active">
+  <div class="card">
+    <div class="icon">🌷</div>
+    <p class="eyebrow">TENGO UNA PREGUNTA PARA TI</p>
+    <h1>¿Quieres salir conmigo? 💗</h1>
+    <p class="sub">Ya vine otra vez a molestar con mis paginas cursis jajaja</p>
+    <div class="buttons">
+      <button id="yes" class="btn primary">Sí, soy muy bonita 💕</button>
+      <button id="no" class="btn secondary">No, soy horrible 😳</button>
+    </div>
+    <p id="noMsg" class="message"></p>
+  </div>
+</section>
+
+<section id="prank" class="screen">
+  <div class="card">
+    <span class="tag">PRIMERA OPCIÓN 😈</span>
+    <div class="bigIcon">📍</div>
+    <p class="eyebrow">NUESTRA CITA SERÁ EN...</p>
+    <h2 id="prankPlace">En el hotel Ruby 👀 </h2>
+    <p id="prankText" class="sub">Sí, así de romántico va a ser nuestro gran momento...</p>
+    <button id="reveal" class="btn primary">Crees que estoy jugando fea? 👀</button>
+  </div>
+</section>
+
+<section id="real" class="screen">
+  <div class="card options-card">
+    <div class="seal">♥</div>
+    <p class="eyebrow">AHORA SÍ, LA CITA REAL 💌</p>
+    <h2>Elige nuestro plan 💗</h2>
+    <p id="realMessage" class="sub">
+      Tengo tres opciones para nosotros. Tú eliges cuál te gustaría más.
+    </p>
+
+    <div class="options" id="options"></div>
+
+    <div id="selectedBox" class="selected-box hidden">
+      <span class="selected-icon">🥰</span>
+      <div>
+        <small>¡PLAN ELEGIDO!</small>
+        <strong id="selectedText"></strong>
+      </div>
+    </div>
+
+    <p id="response" class="message"></p>
+    <button id="accept" class="btn primary">Elegir esta cita 💕</button>
+  </div>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
